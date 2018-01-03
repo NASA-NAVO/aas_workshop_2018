@@ -1,0 +1,37 @@
+Install the Anaconda Navigator, Python 3.6
+https://docs.anaconda.com/anaconda/navigator/install.html
+
+Start Anaconda Navigator.
+
+From the Anaconda Navigator, launch jupyter notebook.
+
+Navigate to your working directory. Open a new Python 3 notebook.
+
+Cut and paste the following into the first cell of the notebook and type shift-return to run that cell. Let me know if you get any errors.
+
+import os
+import io
+import requests
+import shutil
+import ntpath
+
+import urllib.parse
+import urllib.request
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+from IPython.display import Markdown, display
+
+from astropy.io import ascii
+from astropy.io.fits import getdata, getheader
+import astropy.io.fits as fits
+from astropy.table import Table, Column
+from astropy.nddata import Cutout2D
+import astropy.coordinates as coord
+from astropy.coordinates import SkyCoord
+from astropy.wcs import wcs
+import astropy.units as u
+
+import warnings
+from astropy.utils.data import download_file
